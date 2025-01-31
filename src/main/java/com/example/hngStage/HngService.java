@@ -17,7 +17,7 @@ public class HngService {
         String presentDate = dateUtil.formatUsingDateTimeFormatter(date);
         responseDto.setEmail("prebstamar@gmail.com");
         responseDto.setCurrent_datetime(presentDate);
-        responseDto.setGithub_url("https://github.com/Prebor97/hngStage0");
+        responseDto.setGithub_url("https://github.com/Prebor97/hngStage");
         return responseDto;
     }
 
