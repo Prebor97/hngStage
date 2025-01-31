@@ -12,11 +12,11 @@ public class HngService {
 
     public ResponseDto getInfo(){
         LocalDateTime date = LocalDateTime.now();
-        String presentDate = this.formatUsingDateTimeFormatter(date);
+        String presentDate = formatUsingDateTimeFormatter(date);
         return new ResponseDto("prebstamar@gmail.com",presentDate,"https://github.com/Prebor97/hngStage");
     }
 
-    public String formatUsingDateTimeFormatter(LocalDateTime localDateTime) {
+    public static String formatUsingDateTimeFormatter(LocalDateTime localDateTime) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSSX");
         return localDateTime.atOffset(ZoneOffset.UTC).format(formatter);
     }
