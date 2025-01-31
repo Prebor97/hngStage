@@ -12,13 +12,9 @@ public class HngService {
     private DateUtil dateUtil;
 
     public ResponseDto getInfo(){
-        ResponseDto responseDto = new ResponseDto();
         LocalDateTime date = LocalDateTime.now();
-        String presentDate = dateUtil.formatUsingDateTimeFormatter(date);
-        responseDto.setEmail("prebstamar@gmail.com");
-        responseDto.setCurrent_datetime(presentDate);
-        responseDto.setGithub_url("https://github.com/Prebor97/hngStage");
-        return responseDto;
+        String presentDate = DateUtil.formatUsingDateTimeFormatter(date);
+        return new ResponseDto("prebstamar@gmail.com",presentDate,"https://github.com/Prebor97/hngStage");
     }
 
 }

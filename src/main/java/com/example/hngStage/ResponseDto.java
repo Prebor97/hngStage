@@ -8,6 +8,11 @@ public class ResponseDto {
 
     public ResponseDto() {
     }
+    public ResponseDto(String email, String current_datetime, String github_url) {
+        this.email = email;
+        this.current_datetime = current_datetime;
+        this.github_url = github_url;
+    }
 
     public String getEmail() {
         return email;
