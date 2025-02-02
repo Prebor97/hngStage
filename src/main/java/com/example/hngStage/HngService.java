@@ -13,7 +13,7 @@ public class HngService {
     public ResponseDto getInfo(){
         LocalDateTime date = LocalDateTime.now();
         String presentDate = formatUsingDateTimeFormatter(date);
-        return new ResponseDto("prebstamar@gmail.com",presentDate,"https://github.com/Prebor97/hngStage");
+        return new ResponseDto("prebstamar@gmail.com",presentDate,"https://github.com/Prebor97/hngStage0");
     }
 
     public static String formatUsingDateTimeFormatter(LocalDateTime localDateTime) {
