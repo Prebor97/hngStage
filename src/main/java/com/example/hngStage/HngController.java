@@ -19,7 +19,7 @@ public class HngController {
 
     @GetMapping("/")
     public ResponseEntity<ResponseDto> getInfo(){
-        ResponseDto responseDto = service.getInfo();
-        return ResponseEntity.ok(responseDto);
+        ResponseDto responseDtos = service.getInfo();
+        return ResponseEntity.ok(responseDtos);
     }
 }
